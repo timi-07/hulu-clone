@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --hulu-green:#00EB89;
+    --hulu-gray: #A9AEBC;
+    --hulu-blue: #103945;
+    --hulu-dark:#0B0C0F;
+}
+button{
+    font-weight: bold;
+}
+a:visited {color:inherit}
+
+header{
+   display: flex;
+   flex-direction: column;
+    flex-direction: column;
+    min-height: 90dvh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/hd/movie-poster-background-p5qblffj7cvswl5g.jpg');
+    background-position: center;
+}
+
+
+.header-top{
+    padding: 0 1.5em 0 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    color: var(--hulu-green);
+    width: 6em;
+}
+
+.login{
+    font-size: 1.5em;
+    border:none;
+    background-color: transparent;
+    color:var(--hulu-gray)
+}
+
+.header-hero{
+    margin:auto 0;
+    width:100%;
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:white;
+}
+
+.header-hero p{
+    color: var(--hulu-green);
+}
+.header-hero h3{
+    text-align: center;
+    font-size: 2em;
+    max-width: 70%;
+    margin:0 auto;
+
+}
+.header-hero button{
+    padding: .3em 3em;
+    font-weight: 400;
+    font-size: 1.3em;
+    background-color: var(--hulu-green);
+    border: none;
+    border-radius: 5px;
+}
+
+.header-hero a{
+    display: block;
+}
+
+/*trio basic*/
+
+.trio-container{
+
+}
+.trio-basic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 10em;
+    background-color: var(--hulu-blue);
+    background: linear-gradient( rgb(26, 23, 23), var(--hulu-blue))
+
+}
+
+.trio-basic img{
+    width: 15em;
+}
+.trio-basic-text{
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+}
+.trio-basic-text p{
+    color: var(--hulu-green)
+}
+.trio-basic-text h3{
+    color: white
+}
+.trio-basic-text a{
+    text-decoration: none;
+}
+.trio-basic-right{
+    display:flex;
+    flex-direction:column ;
+}
+.trio-basic-right button{
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--hulu-green);
+    color: black;
+    margin-bottom: 5px;
+}
+.trio-basic-right a{
+    display:block;
+    color: var(--hulu-gray);
+    font-size:0.7em
+}
+
+.build-plan{
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hulu-green);
+    align-items: center;
+    background: linear-gradient(to top, rgb(26, 23, 23), var(--hulu-green))
+    
+}
+
+.build-plan h3{
+    color:white;
+    margin-bottom:1em
+}
+
+.build-plan button{
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 1em 3em;
+    background-color: transparent;
+    color:white;
+    border: solid white 2px;
+}
