@@ -1,4 +1,5 @@
 *{
+    font-family: Graphik Web,Graphik,sans-serif;
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -10,7 +11,13 @@
     --hulu-dark:#0B0C0F;
 }
 button{
+    padding: 1em 3em;
     font-weight: bold;
+    background-color: var(--hulu-green);
+    border-radius: 5px;
+    color: black;
+    border: none;
+    cursor: pointer;
 }
 a:visited {color:inherit}
 
@@ -52,6 +59,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     color:white;
+
 }
 
 .header-hero p{
@@ -59,24 +67,31 @@ header{
 }
 .header-hero h3{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     max-width: 70%;
-    margin:0 auto;
+    margin:0.5em auto;
+    
 
 }
 .header-hero button{
-    padding: .3em 3em;
-    font-weight: 400;
-    font-size: 1.3em;
-    background-color: var(--hulu-green);
-    border: none;
-    border-radius: 5px;
+    margin: 0.5em 0;
+    padding: .7em 0 ;
+    font-weight: 700; 
+    font-size: 1em;
+    width: 20rem;
+
 }
 
 .header-hero a{
     display: block;
+    
 }
-
+.hero-right img{
+    width: 300px;
+}
+.hero-left img{
+    width:200px;
+}
 /*trio basic*/
 
 .trio-container{
@@ -107,7 +122,7 @@ header{
     color: white
 }
 .trio-basic-text a{
-    text-decoration: none;
+    color: var(--hulu-gray);
 }
 .trio-basic-right{
     display:flex;
@@ -115,10 +130,6 @@ header{
 }
 .trio-basic-right button{
     padding: 1em;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--hulu-green);
-    color: black;
     margin-bottom: 5px;
 }
 .trio-basic-right a{
@@ -143,10 +154,119 @@ header{
 }
 
 .build-plan button{
-    border-radius: 5px;
     margin-left: 10px;
     padding: 1em 3em;
     background-color: transparent;
     color:white;
     border: solid white 2px;
+}
+
+/*plans section*/
+/*text aligned here might mess up!!!!!!!!!*/
+.plans-section{
+    background-color:var(--hulu-dark);
+    padding: 5em 10em;
+    color:white;
+    text-align: center; 
+    position: relative;
+
+}
+.plans-section h1{
+    font-size: 3em;
+}
+.show-rap{
+
+margin-top: 4em;
+margin-bottom: 4em;
+ /* display: grid;
+grid-template-columns: repeat(4,1fr);  */
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2em;
+
+
+
+}
+.show, .movie, .originals, .premiums{
+    position: relative;
+    background-position: center;
+    text-align: left;
+    padding: 2em;
+    line-height:1.5;
+    aspect-ratio: 1/1.5;
+    min-height: 520px;
+    border-radius: .5em;
+    
+}
+.open-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}   
+.show {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cnbl-cdn.bamgrid.com/assets/1ec99371f77f5ae503b51dd6f05453184acf56feb4e474b0b2d5ea29b91883e4/original');
+}
+
+.movie{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cnbl-cdn.bamgrid.com/assets/d7d0f056b4386699e6a5f4a2727f25baebc84c0329e919622fee46776892fa5d/original');
+}
+.originals{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cnbl-cdn.bamgrid.com/assets/62183f6d48d8844f3fb071c2b131cb1630c1753a770de1be7d076e2da787d455/original');
+}
+
+.premiums{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cnbl-cdn.bamgrid.com/assets/5f2042653fa97c39c8cab0de73f649db75e20585a50472cdacd2787e417de5c8/original');
+
+}
+.modal{
+    color: white;
+    width: 90vw;
+    height: 90vh;
+    position: fixed;
+    margin: auto;
+}
+#show-modal{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://deadline.com/wp-content/uploads/2024/04/family-guy-hulu-specials.jpg');
+}
+#movie-modal{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i0.wp.com/rachelsreviews.net/wp-content/uploads/2024/05/kingdomthumb-1707696509901.png?ssl=1');
+}
+#originals-modal{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://media.npr.org/assets/img/2024/02/27/shogun_101_03553r_wide-3e4044057b179b31f1cfe0a7a2b908c72cf57714.jpg');
+}
+#premiums-modal{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/video-stills/season-01/game-of-thrones-season-1-episode-1-full-stitched-607175_PRO35_10-1920.jpg');
+}
+
+.close {
+    padding: 1EM;
+}
+#try-hulu{
+    color: var(--hulu-green);
+    margin-bottom: 2em;
+}
+#watch{
+    margin-bottom:1em
+}
+
+#top{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    max-width: 50%;
+}
+
+.plans-section button{
+    margin-bottom: 1.5em;
+}
+
+#tiny{
+    font-size: .5em;
+    margin-bottom: 2rem;
 }
